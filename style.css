@@ -725,10 +725,8 @@ body {
 }
 
 .area-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: start;
+    display: flex;
+    justify-content: center;
 }
 
 .area-map {
@@ -811,6 +809,8 @@ body {
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    max-width: 800px;
+    width: 100%;
 }
 
 .area-details h3 {
@@ -1434,23 +1434,8 @@ body {
         margin: -15px 0;
     }
     
-    .area-content {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-    
-    .area-map {
-        order: 1;
-    }
-    
     .area-info {
-        order: 2;
         padding: 30px 20px;
-    }
-    
-    .coverage-circle {
-        width: 250px;
-        height: 250px;
     }
     
     .company-content {
